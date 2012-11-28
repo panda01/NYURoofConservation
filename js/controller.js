@@ -10,7 +10,7 @@
             canvasHeight = $canvas.height(),
             rows = 30,
             cubeWidth = canvasHeight/rows,
-            cols = Math.ceil(cubeWidth/canvasWidth);
+            cols = Math.ceil(canvasWidth/cubeWidth);
 
         $('.draggable').draggable({revert:true, 
             helper:'clone', 
