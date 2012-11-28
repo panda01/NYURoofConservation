@@ -14,12 +14,13 @@
 
         $('.draggable').draggable({revert:true, 
             helper:'clone', 
-            scope:'architect'});
+            scope:'architect',
+            grid:[cols,rows]});
         $('.droppable').droppable({
             drop:function(event, ui)
             {
                 console.log( ui );
-                $(this).append($(ui.draggable).clone());
+                $(this).append($(ui.helper).clone());
             },
             scope:'architect',
             tolerance: 'fit'
