@@ -7,8 +7,9 @@
 
 #canvas
 {
-    height: 80%;
+    height: 60%;
     border: 1px solid #333;
+    width: 800px;
 }
 .draggable 
 {
